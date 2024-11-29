@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.judul-gambar {
+    display: flex;
+    height: 70vh;
+    position: relative;
+    align-items: center;
+}
+
+.latar-gambar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    filter: blur(5px);
+}
+
+.double {
+    position: relative;
+    color: #000000;
+    text-shadow: 2.5px 2.5px 2.5px #f17f7f;
+    margin: 0;
+    border-bottom: 10px;
+    z-index: 1;
+    font-family: 'spicy rice', sans-serif;
+}
+
+#atas {
+    font-size: 60px;
+}
+
+#bawah {
+    font-size: 25px;
+}
+
+main {
+    padding-top: 30px;
+}
+
+header nav {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;  
+    background-color: rgb(255, 213, 220);
+    padding: 9px;
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul a{
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: aqua;
+}
+
+.content {
+    position: relative; 
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    border-radius: 20px;
+    border: solid 2px rgb(255, 255, 255);
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.824);
+    margin: 18px;
+}
+
+#sejarah, #konspirasi, #fakta {
+    background-color: pink;
+    color: rgba(255, 8, 86, 0.824);
+    text-align: center;
+    text-shadow: 2.5px 1.5px 2.5px rgb(255, 213, 220);
+    text-align: center;
+    font-size: 28px;
+    padding: 10px; 
+    flex-wrap: rap;
+    flex-grow: 1;
+    border-radius: 20px 20px 0px 0px;
+    border: solid 2px rgb(0, 0, 0);
+}
+
+#ps, #pk, #pa {
+    text-align: justify;
+    padding: 10px;
+    font-size: 18px;
+    flex-wrap: rap;
+    flex-grow: 1;
+    border-radius: 0px 0px 20px 20px;
+    border: solid 2px rgba(0, 0, 0, 0.824);
+    font-family: "Poppins", sans-serif;
+}
+
+.artc-gambar img {
+    flex-wrap: rap;
+    flex-grow: 1;
+    justify-content: space-between;
+    flex: 1;
+    max-width: 80%;
+    object-fit: cover; 
+    /* margin-left: 70px; */
+    padding-left: 70px;
+}
+
+.baris-1, .baris-2 {
+      align-items: stretch;
+      display: flex;
+      gap: 20px;
+      margin: 30px;
+}
+
+#gambar-1 {
+    color: rgba(112, 198, 255, 0.824);
+    border: solid 1px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(112, 198, 255, 0.824);
+    font-size: 18px;
+    margin-right: 10px;
+    padding-right: 15px;
+}
+
+#gambar-2 {
+    font-size: 18px;
+    color: rgba(248, 113, 255, 0.824);
+    border: solid 1px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(248, 113, 255, 0.824);
+    margin-left: 7px;
+}
+
+#gambar-3 {
+    font-size: 18px;
+    color: rgba(141, 74, 7, 0.824);
+    border: solid 1px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(141, 74, 7, 0.824);
+}
+
+#gambar-4 {
+    font-size: 18px;
+    color: rgba(66, 242, 124, 0.824);
+    border: solid 1px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(66, 242, 124, 0.824);
+}
+
+#gambar-5 {
+    font-size: 18px;
+    color: rgba(112, 131, 255, 0.824);
+    border: solid 1px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(112, 131, 255, 0.824);
+}
+
+#gambar-6 {
+    font-size: 18px;
+    color: rgba(205, 157, 110, 0.824);
+    border: solid 1px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(205, 157, 110, 0.824);
+}
+
+figcaption {  
+    padding-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000000;
+    font-family: "Poppins", sans-serif;
+} 
+
+#warna {
+    padding: 10px;
+    flex-wrap: rap;
+    flex-grow: 1;
+    border-radius: 20px;
+    border: solid 2px rgb(0, 0, 0);
+    color: rgba(255, 8, 86, 0.824);
+    text-align: center;
+    font-size: 28px;
+    text-shadow: 2.5px 1.5px 2.5px rgb(255, 213, 220);
+    background-color: pink;
+}
+
+.main-container {
+    display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column-reverse;
+    }
+
+    main-aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    .main-content  {
+        flex-direction: column;
+    }
+
+    .artc-gambar .baris-1, .baris-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* aside {
+        margin-top: 20px;
+    } */
+}
+
+aside figure img {
+    width: 100%;
+    object-fit: cover;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 1px;
+    align-items: center;
+    display: flex; 
+    justify-content: center;
+}
+
+footer {
+    background-color: rgba(255, 8, 86, 0.824);
+    color: #fff;
+    text-align: center;
+    padding: 15px 15px;
+    font-size: 18px;
+}
+
